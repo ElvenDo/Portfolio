@@ -1,39 +1,159 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
-  --fade: linear-gradient(132deg, #C407FD 41%, #9607FD 61%, #6107FD 77%, #0720FD 100%);
+  --buttonfade:linear-gradient(-200deg, #C407FD 11%, #9607FD 31%, #6107FD 47%, #0720FD 100%);
+  --vfade: linear-gradient(88deg, #C407FD 41%, #9607FD 61%, #6107FD 77%, #0720FD 100%);
+  --hfade: linear-gradient(358deg, #C407FD 41%, #9607FD 61%, #6107FD 77%, #0720FD 100%);
   --color: #FFFFFF;
   --bg: linear-gradient(180deg, #0F1216 20%, #14181E 39%, #1F242D 50%, #444850);
+}
+.Leftcorner{
+  display : block !important ;
+  display : none ; 
+  position : fixed ;
+  left : 70px ;
+  top : 50px ;
+  z-index: 1;
+  background-attachment: fixed;
+}
+.RightCorner{
+  display : block !important ;
+  display : none ; 
+  position : fixed ;
+  right : 70px ;
+  bottom : 50px ;
+  z-index: 1;
+  background-attachment: fixed;
+}
+#LittleLeftCorner{
+  display : block !important ;
+  display : none ; 
+  position :relative;
+  z-index: 1;
+  background-attachment: fixed;
 }
 
 body {
   display: flex;
   overflow: hidden;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background: var(--bg);
+  background: var(--bg) no-repeat fixed;
 }
 
 h1 {
-  font-size: 40px;
+  margin: auto;
   color: var(--color);
   font-family: "Poppins";
+}
+
+#navTitle{
+  padding-left: 0.5vw;
+  font-size: 2em;
+  margin-bottom: 1vh;
+
+}
+#Portfolio{ 
+  padding-left: 1.3vw;
+  padding-bottom: 1.5vh; 
+  font-size: 2.6em;
+}
+
+.descrition{  
+  display: flex;
 }
 
 p {
+  padding-left: 1vw;
+  padding-top: 1vh;
+  width: 40vw;
+  font-size: 0.9em;
+  text-align: justify;
+  margin: 0;
   color: var(--color);
   font-family: "Poppins";
 }
-
+.vline{
+  height: 8.25em;
+  width: 0.3em;
+  background: var(--vfade);
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+}
 main {
-  margin-left: 20vw;
-  margin-right: 20vw;
+  width:60vw;
+  height:30vh;
+  margin:35vh 0 0 20vw;
+  justify-content: space-between;
   display: flex;
+}
+a{
+  font-weight: 700;
+  font-size: 1em;
+  text-decoration: none;
+  color: var(--color);
+  font-family: "Poppins";
+
+}
+.container{
+  background-repeat: no-repeat;
+  background-image: url(./src/svg/LittleLeftCorner.svg);
+  padding-left: 2vw;
+  padding-top: 2vw;
+  height:18vh;
+  width:9vw;
+  z-index: 1;
+}
+.liens{
+  display: flex;
+}
+.competences, .project{
+  margin-bottom: 0.75em;
+}
+.competences > .hline{
+  width: 7.3em;
+  height: 0.3em;
+  background: var(--hfade);
+  clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0 100%);
+}
+.project > .hline{
+  width: 4.2em;
+  height: 0.3em;
+  background: var(--hfade);
+  clip-path: polygon(9% 0, 100% 0%, 91% 100%, 0 100%);
+}
+.iconContainer{
+  display: flex;
+  width: 4vw;
+  justify-content: space-between;
   align-items: center;
 }
-
-.competences {
-  border: 2px solid bla;
+button{
+  width: 8vw;
+  height: 3vh;
+  font-size: 0.7em;
+  margin-left: 1.5vw;
+  border: none;
+  border-radius:30px ;
+  background:var(--buttonfade);
+  color:var(--color);
+  font-weight: 700;
+  font-family: "Poppins";
+}
+#emailIcon:hover{
+  transform:translateY(-0.5vh);
+  transition: 600ms;
+}
+#logogit:hover{
+  transform:translateY(-0.5vh);
+  transition: 600ms;
+}
+button:hover{
+  transition: 700ms;
+  transform: scale(1.1);
+}
+#competences:hover{
+  transition:300ms;
+  text-shadow: 1px 1px 1px white;
+}
+#project:hover{
+  transition:300ms;
+  text-shadow: 1px 1px 1px white;
 }
