@@ -25,10 +25,10 @@
   background-attachment: fixed;
 }
 button{
-  background: none;
   border: none;
-  height: 3.5vh;
-  width: 1.9vw;
+  background: none;
+  height: 30px;
+  width: 30px;
 }
 #backButton {
   display: block !important;
@@ -120,11 +120,11 @@ a {
 
 .container {
   background-repeat: no-repeat;
-  background-image: url(../src/svg/LittleLeftCorner.svg );
-  padding-left: 2vw;
-  padding-top: 2vw;
-  height: 18vh;
-  width: 9vw;
+  background-image: url(../src/svg/LittleLeftCorner.svg);
+  padding-left: 35px;
+  padding-top: 35px;
+  height: 145px;
+  width: 145px;
   z-index: 1;
 }
 
@@ -149,10 +149,11 @@ a {
 
 .iconContainer {
   display: flex;
-  width: 4vw;
+  width: 57px;
   justify-content: space-between;
   align-items: center;
 }
+
 #emailIcon,#logogit{
   transition: all 600ms;
 }

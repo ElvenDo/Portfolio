@@ -95,10 +95,10 @@ a {
 .container {
   background-repeat: no-repeat;
   background-image: url(../src/svg/LittleLeftCorner.svg);
-  padding-left: 2vw;
-  padding-top: 2vw;
-  height: 18vh;
-  width: 9vw;
+  padding-left: 35px;
+  padding-top: 35px;
+  height: 145px;
+  width: 145px;
   z-index: 1;
 }
 
@@ -123,14 +123,14 @@ a {
 
 .iconContainer {
   display: flex;
-  width: 4vw;
+  width: 57px;
   justify-content: space-between;
   align-items: center;
 }
 
 button {
-  width: 8vw;
-  height: 4vh;
+  width: 109px;
+  height: 28px;
   font-size: 0.7em;
   margin-left: 1.5vw;
   border: none;
@@ -153,7 +153,9 @@ button {
 #logogit:hover {
   transform: translateY(-0.5vh);
 }
-
+#cv>a{
+  text-shadow: 0px 4px 4px rgb(0,0,0,0.25);
+}
 button:hover {
   transition: 700ms;
   transform: scale(1.1);
