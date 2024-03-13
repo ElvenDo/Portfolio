@@ -10,20 +10,49 @@
     <div class="Leftcorner">
       <img src="../src/svg/ Leftcorner.svg" alt="Leftcorner" />
     </div>
+    <div class="realiserCard" style="display: none">
+      <h1>Réaliser</h1>
+      <div class="cardTexte">
+        <p>
+          Concevoir, coder, tester et intégrer une solution informatique pour un
+          client,
+        </p>
+        <p>tout en :</p>
+        <ul>
+          <li>respectant les besoins décrits par le client,</li>
+          <li>en appliquant les principes algorithmiques,</li>
+          <li>en veillant à la qualité du code et à sa documentation.</li>
+          <li>en choisissant les ressources techniques appropriées</li>
+        </ul>
+        <p>Permet au niveau professionnel:</p>
+        <ul>
+          <li>Élaborer une application informatique.</li>
+          <li>Faire évoluer une application informatique.</li>
+          <li>
+            Maintenir en conditions opérationnelles une application
+            informatique.
+          </li>
+        </ul>
+      </div>
+      <a id="retour" onclick="toggleCard()"
+        ><img src="../src/svg/retourButton.svg"
+      /></a>
+    </div>
     <main>
       <article class="competence">
         <h1 id="competenceTitle">Compétences.</h1>
         <section class="competenceContainer">
-            <div class="vline"></div>
-            <div class="containerCard">
-              <button class="realiser">Réaliser</button>
-              <button class="gerer">Gérer</button>
-              <button class="optimiser">Optimiser</button>
-              <button class="conduire">Conduire</button>
-              <button class="administrer">Administrer</button>
-              <button class="collaborer">Collaborer</button>
-              <button class="technologies">Technologies</button>
-            </div>
+          <div class="vline"></div>
+
+          <div class="containerCard">
+            <button class="realiser" onclick="toggleCard()">Réaliser</button>
+            <button class="gerer">Gérer</button>
+            <button class="optimiser">Optimiser</button>
+            <button class="conduire">Conduire</button>
+            <button class="administrer">Administrer</button>
+            <button class="collaborer">Collaborer</button>
+            <button class="technologies">Technologies</button>
+          </div>
         </section>
       </article>
       <nav class="navigation">
@@ -55,6 +84,9 @@
     <div class="RightCorner">
       <img src="../src/svg/RightCorner.svg" alt="RightCorner" />
     </div>
-    <a id="backButton" href="/index.html"><img src="../src/svg/BackButton.svg"></a>
+    <a id="backButton" href="/index.html"
+      ><img src="../src/svg/BackButton.svg"
+    /></a>
+    <script src="../js/showCard.js" defer></script>
   </body>
 </html>
