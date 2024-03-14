@@ -12,19 +12,19 @@
     </div>
     <div class="realiserCard" style="display: none">
       <h1>Réaliser</h1>
-      <div class="cardTexte">
+      <div class="texteRealiser">
         <p>
           Concevoir, coder, tester et intégrer une solution informatique pour un
           client,
         </p>
         <p>tout en :</p>
         <ul>
-          <li>respectant les besoins décrits par le client,</li>
-          <li>en appliquant les principes algorithmiques,</li>
-          <li>en veillant à la qualité du code et à sa documentation.</li>
-          <li>en choisissant les ressources techniques appropriées</li>
+          <li>respectant les besoins décrits par le client.</li>
+          <li>appliquant les principes algorithmiques.</li>
+          <li>veillant à la qualité du code et à sa documentation.</li>
+          <li>choisissant les ressources techniques appropriées.</li>
         </ul>
-        <p>Permet au niveau professionnel:</p>
+        <p>Situation professionnel:</p>
         <ul>
           <li>Élaborer une application informatique.</li>
           <li>Faire évoluer une application informatique.</li>
@@ -34,10 +34,133 @@
           </li>
         </ul>
       </div>
-      <a id="retour" onclick="toggleCard()"
+      <a id="retour" onclick="toggleCardRealiser()"
+      ><img src="../src/svg/retourButton.svg"
+    /></a>
+    </div>
+      <div class="optimiserCard" style="display: none">
+        <h1>Optimiser</h1>
+        <div class="texteOptimiser">
+          <p>
+            Proposer des applications informatiques optimisées en fonction de critères spécifiques tels que le temps 
+            d'exécution, la précision et la consommation de ressources. 
+          </p>
+          <p>tout en :</p>
+          <ul>
+            <li>formalisant et modélisant des situations complexes.</li>
+            <li>répertoriant les algorithmes et les structures de données pertinents.</li>
+            <li>s'appuyant sur des schémas de raisonnement.</li>
+            <li>justifiant les choix et en validant les résultats.</li>
+          </ul>
+          <p>Situation professionnel:</p>
+          <ul>
+            <li>Améliorer les performances des programmes dans des contextes contraints.</li>
+            <li>L'imiter l'impact environnemental d'une application informatique.</li>
+            <li> Mettre en place des applications adaptées et efficaces.</li>
+          </ul>
+        </div>
+      <a id="retour" onclick="toggleCardOptimiser()"
         ><img src="../src/svg/retourButton.svg"
       /></a>
     </div>
+  </div>
+  <div class="administrerCard" style="display: none">
+    <h1>Administrer</h1>
+    <div class="texteAdministrer">
+      <p>Installer, configurer, mettre à disposition, maintenir en conditions opérationnelles les infrastructures,
+         les services et les réseaux, et optimiser le système informatique d'une organisation. 
+      </p>
+      <p>tout en :</p>
+      <ul>
+        <li>sécurisant le système d'information.</li>
+        <li>appliquant les normes en vigueur et les bonnes pratiques architecturales et de sécurité.</li>
+        <li>offrant une qualité de service optimale.</li>
+        <li>en assurant la continuité d'activité.</li>
+      </ul>
+      <p>Situation professionnel:</p>
+      <ul>
+        <li>Déployer une nouvelle architecture technique.</li>
+        <li>Améliorer une infrastructure existante.</li>
+        <li>Sécuriser les applications et les services.</li>
+      </ul>
+    </div>
+  <a id="retour" onclick="toggleCardAdministrer()"
+    ><img src="../src/svg/retourButton.svg"
+  /></a>
+</div>
+<div class="gererCard" style="display: none">
+  <h1>Gérer</h1>
+  <div class="texteGerer">
+    <p>Concevoir, gérer, administrer et exploiter les données de l’entreprise et mettre à disposition toutes 
+      les informations pour un bon pilotage de l’entreprise. 
+    </p>
+    <p>tout en :</p>
+    <ul>
+      <li>respectant les réglementations sur le respect de la vie privée et la protection des données personnelles.</li>
+      <li>tenant compte des enjeux économiques, sociaux et écologiques de l’utilisation du stockage de données,
+         ainsi que des différentes infrastructures (data centers, cloud, etc.).</li>
+      <li>s’appuyant sur des bases mathématiques.</li>
+      <li>assurant la cohérence et la qualité des données.</li>
+    </ul>
+    <p>Situation professionnel:</p>
+    <ul>
+      <li>Lancer un projet.</li>
+      <li>Sécuriser des données.</li>
+      <li>Exploiter des données pour la prise de décisions.</li>
+    </ul>
+  </div>
+<a id="retour" onclick="toggleCardGerer()"
+  ><img src="../src/svg/retourButton.svg"
+/></a>
+</div>
+<div class="conduireCard" style="display: none">
+  <h1>Conduire</h1>
+  <div class="texteConduire">
+    <p>Satisfaire les besoins des utilisateurs au regard de la chaîne de valeur du client, organiser et piloter un projet
+       informatique avec des méthodes classiques ou agiles
+    </p>
+    <p>tout en :</p>
+    <ul>
+      <li> adoptant une démarche proactive, créative et critique.</li>
+      <li>respectant les règles juridiques et les normes en vigueur.</li>
+      <li>communiquant efficacement avec les différents acteurs d’un projet.</li>
+      <li>ensibilisant à une gestion éthique, responsable, durable et interculturelle.</li>
+    </ul>
+    <p>Situation professionnel:</p>
+    <ul>
+      <li>Lancer un nouveau projet.</li>
+      <li>Sécuriser des données.</li>
+      <li>Exploiter des données pour la prise de décisions.</li>
+    </ul>
+  </div>
+<a id="retour" onclick="toggleCardConduire()"
+  ><img src="../src/svg/retourButton.svg"
+/></a>
+</div>
+<div class="collaborerCard" style="display: none">
+  <h1>Collaborer</h1>
+  <div class="texteCollaborer">
+    <p>Acquérir, développer et exploiter les aptitudes nécessaires pour travailler 
+      efficacement dans une équipe informatique.
+    </p>
+    <p>tout en :</p>
+    <ul>
+      <li>inscrivant sa démarche au sein d’une équipe pluridisciplinaire.</li>
+      <li>accompagnant la mise en œuvre des évolutions informatiques.</li>
+      <li>veillant au respect des contraintes juridiques.</li>
+      <li>développant une communication efficace et collaborative.</li>
+    </ul>
+    <p>Situation professionnel:</p>
+    <ul>
+      <li>Lancer un nouveau projet.</li>
+      <li>Organiser son travail en relation avec celui de son équipe.</li>
+      <li>Elaborer, gerer et transmettre de l'information.</li>
+    </ul>
+  </div>
+<a id="retour" onclick="toggleCardCollaborer()"
+  ><img src="../src/svg/retourButton.svg"
+/></a>
+</div>
     <main>
       <article class="competence">
         <h1 id="competenceTitle">Compétences.</h1>
@@ -45,12 +168,12 @@
           <div class="vline"></div>
 
           <div class="containerCard">
-            <button class="realiser" onclick="toggleCard()">Réaliser</button>
-            <button class="gerer">Gérer</button>
-            <button class="optimiser">Optimiser</button>
-            <button class="conduire">Conduire</button>
-            <button class="administrer">Administrer</button>
-            <button class="collaborer">Collaborer</button>
+            <button class="realiser" onclick="toggleCardRealiser()">Réaliser</button>
+            <button class="gerer" onclick="toggleCardGerer()">Gérer</button>
+            <button class="optimiser" onclick="toggleCardOptimiser()">Optimiser</button>
+            <button class="conduire" onclick="toggleCardConduire()">Conduire</button>
+            <button class="administrer" onclick="toggleCardAdministrer()">Administrer</button>
+            <button class="collaborer" onclick="toggleCardCollaborer()">Collaborer</button>
             <button class="technologies">Technologies</button>
           </div>
         </section>
