@@ -120,7 +120,7 @@ h1 {
   grid-area: 3 / 2 / 4 / 3;
 }
 
-.technologies {
+.technologique {
   grid-area: 4 / 1 / 5 / 3;
   justify-self: center;
 }
@@ -554,4 +554,135 @@ a {
   padding-top: 16px;
   padding-bottom: 10px;
 
+}
+.technologiesCard {
+  backdrop-filter: blur(12px);
+  background: var(--cardFade);
+  position: absolute;
+  z-index: 1;
+  margin-left: 28vw;
+  margin-top: 22vh;
+  border-radius: 20px;
+  width: 459px;
+  height: 455px;
+}
+
+.technologiesContainer {
+  display: flex;
+  flex-direction: column;
+  color: var(--color);
+  font-family: 'Poppins';
+  font-weight: 700;
+  width: 305px;
+  height: 320px;
+  text-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+}
+
+h2 {
+  margin-left: 40px;
+  text-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+}
+
+.technologiesCard>h1 {
+  text-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 10px;
+}
+
+.logoContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1, 1fr;
+  margin-left: 53px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  grid-column-gap: 10px;
+  width: 350px;
+  height: 100px;
+}
+
+#html {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+#css {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+#php {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+#javascript {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+#java {
+  grid-area: 1 / 5 / 2 / 6;
+}
+
+#htmlTexte {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+#cssTexte {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+#phpTexte {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+#javascriptTexte {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+#javaTexte {
+  grid-area: 2 / 5 / 3 / 6;
+}
+
+.logicielsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1, 1fr;
+  align-items: center;
+  margin-left: 53px;
+  justify-items: center;
+  text-align: center;
+  grid-column-gap: 10px;
+  width: 350px;
+  height: 100px;
+}
+
+#figma {
+  align-items: center;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+#illustrator {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+#indesign {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+#vscode {
+  grid-area: 1 / 4 / 2 / 5;
+}
+#figmaTexte {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+#illustratorTexte {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+#indesignTexte {
+  grid-area: 2 / 3 / 3 / 4;
+}
+#vscodeTexte {
+  grid-area: 2 / 4 / 3 / 5;
 }

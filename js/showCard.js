@@ -5,6 +5,7 @@ var administrerCard = document.querySelector(".administrerCard");
 var gererCard = document.querySelector(".gererCard");
 var conduireCard = document.querySelector(".conduireCard");
 var collaborerCard = document.querySelector(".collaborerCard");
+var technologieCard = document.querySelector(".technologiesCard")
 function toggleCardRealiser() {
     if (realiserCard.style.display === "none") {
         realiserCard.style.display = "block";
@@ -80,6 +81,19 @@ function toggleCardCollaborer() {
         collaborerCard.classList.add("zoom-out");
         setTimeout(function () {
             collaborerCard.style.display = "none";
+        }, 500);
+    }
+}
+function toggleCardTechnologie(){
+    if (technologieCard.style.display === "none") {
+        technologieCard.style.display = "block";
+        technologieCard.classList.add("zoom-in");
+        technologieCard.classList.remove("zoom-out");
+    } else {
+        technologieCard.classList.remove("zoom-in");
+        technologieCard.classList.add("zoom-out");
+        setTimeout(function () {
+            technologieCard.style.display = "none";
         }, 500);
     }
 }
