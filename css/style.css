@@ -10,7 +10,6 @@
 
 .Leftcorner {
   display: block !important;
-  display: none;
   position: fixed;
   left: 70px;
   top: 50px;
@@ -20,7 +19,6 @@
 
 .RightCorner {
   display: block !important;
-  display: none;
   position: fixed;
   right: 70px;
   bottom: 50px;
@@ -30,7 +28,6 @@
 
 body {
   display: flex;
-  overflow: hidden;
   background: var(--bg) no-repeat fixed;
 }
 
