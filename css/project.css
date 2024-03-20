@@ -4,8 +4,7 @@
   --buttonfade: linear-gradient(-200deg, #C407FD 11%, #9607FD 31%, #6107FD 47%, #0720FD 100%);
   --vfade: linear-gradient(88deg, #C407FD 41%, #9607FD 61%, #6107FD 77%, #0720FD 100%);
   --hfade: linear-gradient(358deg, #C407FD 41%, #9607FD 61%, #6107FD 77%, #0720FD 100%);
-  --cardFade: linear-gradient(170deg, rgba(196, 7, 253, 0.5) 41%, rgba(150, 7, 253, 0.5) 61%, rgba(97, 7, 253, 0.5) 77%, rgba(7, 32, 253, 0.5) 100%);
-  --cardFadeBG: linear-gradient(170deg, rgba(196, 7, 253, 0.3) 41%, rgba(150, 7, 253, 0.3) 61%, rgba(97, 7, 253, 0.3) 77%, rgba(7, 32, 253, 0.3) 100%);
+  --cardFade: linear-gradient(170deg, rgba(196, 7, 253, 0.7) 41%, rgba(150, 7, 253, 0.7) 61%, rgba(97, 7, 253, 0.7) 77%, rgba(7, 32, 253, 0.7) 100%);
   --color: #FFFFFF;
   --bg: linear-gradient(180deg, #0F1216 20%, #14181E 39%, #1F242D 50%, #444850);
 }
@@ -134,9 +133,11 @@ a {
   width: 145px;
   z-index: 1;
 }
-.projectContainer{
+
+.projectContainer {
   display: flex;
 }
+
 .competences,
 .project {
   margin-bottom: 0.75em;
@@ -211,21 +212,28 @@ a {
   justify-content: space-between;
 }
 
-.projet1 {
+.projet1,
+.projet2,
+.projet3 {
   background: var(--cardFade);
   width: 190px;
   height: 150px;
   backdrop-filter: blur(12px);
   border-radius: 20px;
   display: flex;
-  position: absolute ;
-  z-index: 1;
   align-items: center;
   flex-direction: column;
-  justify-content: space-around;
 }
 
-.projet1>h2 {
+.projet1>img,
+.projet2>img,
+.projet3>img {
+  margin-top: 10px;
+}
+
+.projet1>h2,
+.projet2>h2,
+.projet3>h2 {
   font-size: 1.25em;
   text-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
   color: var(--color);
@@ -233,33 +241,13 @@ a {
   font-family: "Poppins";
   font-weight: 700;
 }
-.projet1 > img{
-  margin-top: 10px;
-}
-.projet1bg {
-  background: var(--cardFadeBG);
-  width: 190px;
-  height: 150px;
-  border-radius: 20px;
+
+.caroussel {
+  margin-left: 2.6vw;
+  width: 45vw;
+  height: 20vh;
+  z-index: 1;
+  position: relative;
   display: flex;
-  position: absolute ;
-  z-index: 1;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.projet1bg>h2 {
-  font-size: 1.25em;
-  text-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
-  color: var(--color);
-  text-align: center;
-  font-family: "Poppins";
-  font-weight: 700;
-}
-.projet1bg > img{
-  margin-top: 10px;
-}
-.projet1Card{
-  padding-left: 14px;
+  justify-content: space-between;
 }
