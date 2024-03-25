@@ -192,13 +192,13 @@ a {
   opacity: .20;
 }
 
-.precedent {
+#prev {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(../src/svg/LeftArrow.svg)
 }
 
-.next {
+#next {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(../src/svg/RightArrow.svg)
@@ -212,9 +212,7 @@ a {
   justify-content: space-between;
 }
 
-.projet1,
-.projet2,
-.projet3 {
+.slide{
   background: var(--cardFade);
   width: 190px;
   height: 150px;
@@ -225,15 +223,11 @@ a {
   flex-direction: column;
 }
 
-.projet1>img,
-.projet2>img,
-.projet3>img {
+.slide>img{
   margin-top: 10px;
 }
 
-.projet1>h2,
-.projet2>h2,
-.projet3>h2 {
+.slide>h2{
   font-size: 1.25em;
   text-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
   color: var(--color);
@@ -243,11 +237,11 @@ a {
 }
 
 .caroussel {
-  margin-left: 2.6vw;
-  width: 45vw;
-  height: 20vh;
-  z-index: 1;
+  border: 1px dotted greenyellow;
+  margin-left: calc(2.6vw + 190px);
+  width: 190px;
+  height: 150px;
+  /* overflow-x: hidden; */
   position: relative;
   display: flex;
-  justify-content: space-between;
 }
