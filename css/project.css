@@ -73,8 +73,6 @@ h1 {
   font-size: 2.6em;
 }
 
-
-
 p {
   padding-left: 1vw;
   padding-top: 1vh;
@@ -136,6 +134,14 @@ a {
 
 .projectContainer {
   display: flex;
+  width: 40vw;
+}
+.itemProjet{
+  margin-left: 10%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .competences,
@@ -204,14 +210,6 @@ a {
   background-image: url(../src/svg/RightArrow.svg)
 }
 
-.buttonContainer {
-  margin-top: 3vh;
-  margin-left: 20vw;
-  width: 7.6vw;
-  display: flex;
-  justify-content: space-between;
-}
-
 .slide{
   background: var(--cardFade);
   width: 190px;
@@ -221,6 +219,7 @@ a {
   display: flex;
   align-items: center;
   flex-direction: column;
+  transition: all 1s ease; /* Ajoutez une transition */
 }
 
 .slide>img{
@@ -237,11 +236,30 @@ a {
 }
 
 .caroussel {
-  border: 1px dotted greenyellow;
-  margin-left: calc(2.6vw + 190px);
   width: 190px;
   height: 150px;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
+}
+.carrouselItems{
+  transition: transform 0.5s ease;
   position: relative;
   display: flex;
+}
+.indicateursContainer {
+  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.indicateur {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: background-color 0.5s ease;}
+
+.indicateur.active {
+  background: var(--buttonfade);
 }
