@@ -64,7 +64,12 @@ p {
   color: var(--color);
   font-family: "Poppins";
 }
-
+p > strong{
+  font-size: 1.2em;
+}
+p > u{
+  font-size: 1.2em;
+}
 .vline {
   height: 8.25em;
   width: 0.3em;
