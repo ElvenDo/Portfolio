@@ -81,6 +81,7 @@ p {
   width: 40vw;
   font-size: 0.9em;
   text-align: justify;
+  font-weight: 600;
   margin: 0;
   color: var(--color);
   font-family: "Poppins";
@@ -291,7 +292,14 @@ a {
   margin-left: 25vw;
   margin-top: 22vh;
 }
-
+.detailsCardPendu{
+  width: 520px;
+  height: 470px;
+}
+.detailsCardDecision{
+  width: 520px;
+  height: 470px;
+}
 .imageCard {
   margin-top: 24px;
   border-radius: 20px;
