@@ -137,13 +137,13 @@ h1 {
 }
 
 .vline {
-  height: 8.25em;
+  height: 10.4em;
   width: 0.3em;
   background: var(--vfade);
   clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
 }
 
-@keyframes slide {
+@keyframes slideEffect {
   from {
     transform: translateY(100%);
     opacity: 0;
@@ -163,7 +163,7 @@ main {
   justify-content: space-between;
   display: flex;
   opacity: 0;
-  animation: slide 200ms ease-in-out 200ms forwards;
+  animation: slideEffect 200ms ease-in-out 200ms forwards;
 }
 
 a {

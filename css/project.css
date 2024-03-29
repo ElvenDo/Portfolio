@@ -5,6 +5,7 @@
   --vfade: linear-gradient(88deg, #C407FD 41%, #9607FD 61%, #6107FD 77%, #0720FD 100%);
   --hfade: linear-gradient(358deg, #C407FD 41%, #9607FD 61%, #6107FD 77%, #0720FD 100%);
   --cardFade: linear-gradient(170deg, rgba(196, 7, 253, 0.7) 41%, rgba(150, 7, 253, 0.7) 61%, rgba(97, 7, 253, 0.7) 77%, rgba(7, 32, 253, 0.7) 100%);
+  --detailsCardFade: linear-gradient(170deg, rgba(196, 7, 253, 0.5) 41%, rgba(150, 7, 253, 0.5) 61%, rgba(97, 7, 253, 0.5) 77%, rgba(7, 32, 253, 0.5) 100%);
   --color: #FFFFFF;
   --bg: linear-gradient(180deg, #0F1216 20%, #14181E 39%, #1F242D 50%, #444850);
 }
@@ -30,6 +31,7 @@
 button {
   border: none;
   background: none;
+  cursor: pointer;
   height: 30px;
   width: 30px;
 }
@@ -85,7 +87,7 @@ p {
 }
 
 .vline {
-  height: 8.25em;
+  height: 10em;
   width: 0.3em;
   background: var(--vfade);
   clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
@@ -136,7 +138,8 @@ a {
   display: flex;
   width: 40vw;
 }
-.itemProjet{
+
+.itemProjet {
   margin-left: 10%;
   align-items: center;
   display: flex;
@@ -210,7 +213,7 @@ a {
   background-image: url(../src/svg/RightArrow.svg)
 }
 
-.slide{
+.slide {
   background: var(--cardFade);
   width: 190px;
   height: 150px;
@@ -219,14 +222,20 @@ a {
   display: flex;
   align-items: center;
   flex-direction: column;
-  transition: all 1s ease; /* Ajoutez une transition */
+  transition: all 1s ease;
+  /* Ajoutez une transition */
 }
 
-.slide>img{
+.caroussel:hover {
+  transition: 500ms;
+  transform: scale(1.1);
+}
+
+.slide>img {
   margin-top: 10px;
 }
 
-.slide>h2{
+.slide>h2 {
   font-size: 1.25em;
   text-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
   color: var(--color);
@@ -239,12 +248,16 @@ a {
   width: 190px;
   height: 150px;
   overflow-x: hidden;
+  transition: all 500ms;
+
 }
-.carrouselItems{
+
+.carrouselItems {
   transition: transform 0.5s ease;
   position: relative;
   display: flex;
 }
+
 .indicateursContainer {
   margin-left: 10%;
   display: flex;
@@ -258,8 +271,147 @@ a {
   background-color: #ccc;
   border-radius: 50%;
   margin: 0 5px;
-  transition: background-color 0.5s ease;}
+  transition: background-color 0.5s ease;
+}
 
 .indicateur.active {
   background: var(--buttonfade);
+}
+
+.detailsCardCrous, .detailsCardPendu, .detailsCardDecision, .detailsCardHistoire {
+  width: 520px;
+  height: 450px;
+  background: var(--detailsCardFade);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  backdrop-filter: blur(12px);
+  margin-left: 25vw;
+  margin-top: 22vh;
+}
+
+.imageCard {
+  margin-top: 24px;
+  border-radius: 20px;
+  width: 279px;
+  height: 144px;
+  box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+}
+#crousImage{
+  background-image: url(../src/svg/crousBab.svg);
+}
+#penduImage{
+  background-image: url(../src/svg/penduImage.svg);
+}
+#decisionImage{
+  background-image: url(../src/svg/decisionImage.svg);
+}
+#histoireImage{
+  background-image: url(../src/svg/histoireImage.svg);
+}
+.title>h1 {
+  font-size: 1.25em;
+  text-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+
+}
+
+.overlay {
+  text-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+  color: var(--color);
+  font-family: 'Poppins';
+  position: absolute;
+  width: 279px;
+  height: 144px;
+  text-align: center;
+  line-height: 144px;
+  opacity: 0;
+  position: absolute;
+  border-radius:20px ;
+  cursor: pointer;
+
+}
+.overlay:hover{
+  backdrop-filter: blur(2px); /* Applique un flou de 2 pixels à l'image lors du survol */
+}
+.imageCard:hover .overlay {
+  opacity: 1; /* Opacité de l'élément .overlay à 1 lors du survol */
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px
+}
+
+.description {
+  display: flex;
+  max-width: 500px;
+  gap: 10px;
+  margin-left: 8px;
+
+}
+
+h2 {
+  color: var(--color);
+  font-weight: 700;
+  font-family: "Poppins";
+  font-size: 1em;
+  text-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+
+}
+
+.description>p {
+  color: var(--color);
+  text-align: justify;
+  font-size: 0.8em;
+}
+
+.technologies {
+  padding-top: 30px;
+  margin-left: 8px;
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+#retour {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+#retour:hover {
+  transform: scale(1.1);
+}
+
+.zoom-in {
+  animation: zoom 200ms ease forwards;
+}
+
+.zoom-out {
+  animation: dezoom 200ms ease forwards;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(0)
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes dezoom {
+  0% {
+    transform: scale(1)
+  }
+
+  100% {
+    transform: scale(0);
+  }
 }

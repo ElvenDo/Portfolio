@@ -4,15 +4,120 @@
     <link rel="stylesheet" href="../css/project.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects</title>
+    <title>Projets</title>
   </head>
   <body>
     <div class="Leftcorner">
       <img src="../src/svg/ Leftcorner.svg" alt="Leftcorner" />
     </div>
+    <div class="detailsCardCrous" style="display: none">
+      <div class="title">
+          <div class="imageCard" id="crousImage">
+            <a class="overlay" href="#">Voir le site</a>
+          </div>
+        <h1 id="cardTitle">Crous’Bab</h1>
+      </div>
+      <div class="description">
+        <h2>Description:</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          praesentium recusandae tenetur dolor sapiente. Alias consectetur
+          magni, sit corrupti asperiores totam necessitatibus amet. Culpa
+          recusandae debitis facilis, delectus cum at!
+        </p>
+      </div>
+      <div class="technologies">
+        <h2>Technologies :</h2>
+        <img src="../src/svg/html.svg" alt="html logo" />
+        <img src="../src/svg/css.svg" alt="css logo" />
+        <img src="../src/svg/figma.svg" alt="figma logo" />
+      </div>
+      <a id="retour" onclick="toggleCardCrousBab()"
+        ><img src="../src/svg/retourButton.svg"
+      /></a>
+    </div>
+    <div class="detailsCardPendu" style="display: none">
+      <div class="title">
+          <div class="imageCard" id="penduImage">
+            <a class="overlay" href="#">Visuel Indisponible</a>
+          </div>
+        <h1 id="cardTitle">JeuDuPendu</h1>
+      </div>
+      <div class="description">
+        <h2>Description:</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          praesentium recusandae tenetur dolor sapiente. Alias consectetur
+          magni, sit corrupti asperiores totam necessitatibus amet. Culpa
+          recusandae debitis facilis, delectus cum at!
+        </p>
+      </div>
+      <div class="technologies">
+        <h2>Technologies :</h2>
+        <img src="../src/svg/html.svg" alt="html logo" />
+        <img src="../src/svg/css.svg" alt="css logo" />
+        <img src="../src/svg/php.svg" alt="php logo" />
+        <img src="../src/svg/javascript.svg" alt="javascript logo" />
+      </div>
+      <a id="retour" onclick="toggleCardPendu()"
+        ><img src="../src/svg/retourButton.svg"
+      /></a>
+    </div>
+    <div class="detailsCardDecision" style="display: none">
+      <div class="title">
+          <div class="imageCard" id="decisionImage">
+            <a class="overlay" href="#">Visuel Indisponible</a>
+          </div>
+        <h1 id="cardTitle">Aide à la décision</h1>
+      </div>
+      <div class="description">
+        <h2>Description:</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          praesentium recusandae tenetur dolor sapiente. Alias consectetur
+          magni, sit corrupti asperiores totam necessitatibus amet. Culpa
+          recusandae debitis facilis, delectus cum at!
+        </p>
+      </div>
+      <div class="technologies">
+        <h2>Technologies :</h2>
+        <img src="../src/svg/java.svg" alt="java logo" />
+      </div>
+      <a id="retour" onclick="toggleCardDecision()"
+        ><img src="../src/svg/retourButton.svg"
+      /></a>
+    </div>
+    <div class="detailsCardHistoire" style="display: none">
+      <div class="title">
+          <div class="imageCard" id="histoireImage">
+            <a class="overlay" href="#">Visuel Indisponible</a>
+          </div>
+        <h1 id="cardTitle">Foirauxhistoires</h1>
+      </div>
+      <div class="description">
+        <h2>Description:</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          praesentium recusandae tenetur dolor sapiente. Alias consectetur
+          magni, sit corrupti asperiores totam necessitatibus amet. Culpa
+          recusandae debitis facilis, delectus cum at!
+        </p>
+      </div>
+      <div class="technologies">
+        <h2>Technologies :</h2>
+        <img src="../src/svg/html.svg" alt="html logo" />
+        <img src="../src/svg/css.svg" alt="css logo" />
+        <img src="../src/svg/figma.svg" alt="figma logo"/>
+        <img src="../src/svg/javascript.svg" alt="javascript logo"/>
+        <img src="../src/svg/python.svg" alt="python logo"/>
+      </div>
+      <a id="retour" onclick="toggleCardHistoire()"
+        ><img src="../src/svg/retourButton.svg"
+      /></a>
+    </div>
     <main>
       <article class="projects">
-        <h1 id="projectTitle">Projects.</h1>
+        <h1 id="projectTitle">Projets</h1>
         <section class="projectContainer">
           <div class="vline"></div>
           <section class="itemProjet">
@@ -20,37 +125,35 @@
             <div class="caroussel">
               <div class="carrouselItems">
                 <section class="projet1Card">
-                  <div class="slide">
+                  <button class="slide" onclick="toggleCardCrousBab()">
                     <img src="../src/svg/crousbab.svg" alt="crousBab" />
                     <h2>Crous’Bab</h2>
-                  </div>
+                  </button>
                 </section>
                 <section class="projet2Card">
-                  <div class="slide">
+                  <button class="slide" onclick="toggleCardPendu()">
                     <img src="../src/svg/penduLogo.svg" alt="pendu" />
                     <h2>JeuDuPendu</h2>
-                  </div>
+                  </button>
                 </section>
                 <section class="projet3Card">
-                  <div class="slide">
+                  <button class="slide" onclick="toggleCardDecision()">
                     <img src="../src/svg/graph.svg" alt="graph" />
                     <h2>Aide à la décision</h2>
-                  </div>
+                  </button>
                 </section>
                 <section class="projet4Card">
-                  <div class="slide">
+                  <button class="slide" onclick="toggleCardHistoire()">
                     <img src="../src/svg/histoire.svg" alt="histoire" />
                     <h2>Foirauxhistoires</h2>
-                  </div>
+                  </button>
                 </section>
               </div>
             </div>
             <button class="btn" id="next"></button>
           </section>
         </section>
-        <div class="indicateursContainer">
-          <!-- Les indicateurs de position seront ajoutés dynamiquement ici -->
-        </div>
+        <div class="indicateursContainer"></div>
       </article>
       <nav class="navigation">
         <h1 id="navTitle">Navigation</h1>
@@ -85,5 +188,6 @@
       ><img src="../src/svg/BackButton.svg"
     /></a>
     <script src="../js/caroussel.js"></script>
+    <script src="../js/projetCard.js"></script>
   </body>
 </html>

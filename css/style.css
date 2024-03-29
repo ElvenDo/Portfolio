@@ -83,6 +83,8 @@ main {
   margin: 35vh 0 0 20vw;
   justify-content: space-between;
   display: flex;
+  opacity: 0;
+  animation: slideEffect 200ms ease-in-out 200ms forwards;
 }
 
 a {
@@ -129,7 +131,17 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+@keyframes slideEffect {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
 
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 button {
   width: 109px;
   height: 28px;
