@@ -692,10 +692,17 @@ h2 {
 }
 
 #vscodeTexte {
-  grid-area: 2 / 4 / 3 / 5;
+  grid-area: 2 / 4 / 3 / 5; 
 }
-
-@media(max-width: 1220px) {
+@media (940px >= width ) {
+  main{
+    display: none;
+  }
+  #textHide{
+    display: block;
+  }
+ }
+/* @media(max-width: 1220px) {
   .containerCard {
     margin-left: 6vw;
   }
@@ -741,4 +748,4 @@ h2 {
     margin-left: 15%;
 
   }
-}
+} */
