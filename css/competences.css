@@ -663,11 +663,10 @@ h2 {
 }
 
 #figma {
-  align-items: center;
   grid-area: 1 / 1 / 2 / 2;
 }
 
-#illustrator {
+#vscode {
   grid-area: 1 / 2 / 2 / 3;
 }
 
@@ -675,7 +674,7 @@ h2 {
   grid-area: 1 / 3 / 2 / 4;
 }
 
-#vscode {
+#illustrator {
   grid-area: 1 / 4 / 2 / 5;
 }
 
@@ -683,7 +682,7 @@ h2 {
   grid-area: 2 / 1 / 3 / 2;
 }
 
-#illustratorTexte {
+#vscodeTexte {
   grid-area: 2 / 2 / 3 / 3;
 }
 
@@ -691,7 +690,7 @@ h2 {
   grid-area: 2 / 3 / 3 / 4;
 }
 
-#vscodeTexte {
+#illustratorTexte {
   grid-area: 2 / 4 / 3 / 5; 
 }
 @media (940px >= width ) {
