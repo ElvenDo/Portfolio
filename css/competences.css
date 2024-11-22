@@ -9,6 +9,7 @@
   --hfade: linear-gradient(358deg, #C407FD 41%, #9607FD 61%, #6107FD 77%, #0720FD 100%);
   --color: #FFFFFF;
   --bg: linear-gradient(180deg, #0F1216 20%, #14181E 39%, #1F242D 50%, #444850);
+  --test: linear-gradient(170deg, rgba(196, 7, 253, 0.2) 41%, rgba(150, 7, 253, 0.2) 61%, rgba(97, 7, 253, 0.2) 77%, rgba(7, 32, 253, 0.2) 100%);
 }
 
 .Leftcorner {
@@ -254,16 +255,18 @@ a {
 
 .realiserCard {
   backdrop-filter: blur(12px);
-  background: var(--cardFade);
+  background: var(--test);
   position: absolute;
   z-index: 1;
   margin-left: 30.3vw;
   margin-top: 28vh;
-  border-radius: 20px;
   width: 369px;
   height: 380px;
-
+  border: 3px solid;
+  border-image-slice: 1;
+  border-image-source: var(--cardFade) ;
 }
+
 
 @keyframes zoom {
   0% {
